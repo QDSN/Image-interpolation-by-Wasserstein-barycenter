@@ -1,3 +1,2 @@
-# Wasserstein barycenterによる画像補間
-ユークリッド距離の代わりにWasserstein距離により定義される重心によって複数の画像間のぼやけることのない中間画像を生成する。 重心を計算する際の重みを調節することでどの参考画像により近づけるかを調節できる。
-Wasserstein距離の最適化はエントロピー制約付きの最適化問題をsinkhornアルゴリズムにより解ける。 ライブラリはPython optimal transportを用いた
+# Image-interpolation-by-Wasserstein-barycenter
+The center of gravity, defined by the Wasserstein distance instead of the Euclidean distance, produces a blur-free intermediate image between the multiple images. By adjusting the weights used to compute the center of gravity, one can adjust which reference image is closer. The optimization of the Wasserstein distance is based on the sinkhorn algorithm, which solves the optimization problem with entropy constraints. The library is Python optimal transport.
